@@ -18,10 +18,10 @@ jobs:
 
       - name: read file
         run: cat test.txt
-        
+
   other:
     runs-on: ubuntu-latest
-
+    needs: hola
     steps:
       - name: LS
         run: ls -la
